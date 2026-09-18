@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Фильмы серии Аватар и форма зрителя." />
+    <title>Avatar | Фильмы</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html">AVATAR</a>
+      <nav aria-label="Основная навигация">
+        <ul class="nav-list">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="about.html">О Пандоре</a></li>
+          <li><a href="about.html#characters">Персонажи</a></li>
+          <li><a href="index.html#gallery">Галерея</a></li>
+          <li>
+            <a class="active" aria-current="page" href="contact.html">Фильмы</a>
+          </li>
+        </ul>
+      </nav>
+      <a class="nav-cta" href="about.html#trailer">Смотреть трейлер ▶</a>
+    </header>
+    <main class="inner-page">
+      <section class="page-intro">
+        <p class="eyebrow">Порядок просмотра</p>
+        <h1>Фильмы Avatar</h1>
+        <p>
+          Таблица показывает основные фильмы серии. В ней используются реальные
+          даты и общая информация, а начинать просмотр лучше в порядке релиза.
+        </p>
+      </section>
+      <div class="table-wrap">
+        <table>
+          <caption>
+            Фильмы вселенной Avatar
+          </caption>
+          <thead>
+            <tr>
+              <th scope="col">Фильм</th>
+              <th scope="col">Год</th>
+              <th scope="col">Режиссёр</th>
+              <th scope="col">Главная тема</th>
+              <th scope="col">Статус</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Avatar</th>
+              <td>2009</td>
+              <td rowspan="5">James Cameron</td>
+              <td>Лесной народ Оматикайя</td>
+              <td>Вышел</td>
+            </tr>
+            <tr>
+              <th scope="row">Avatar: The Way of Water</th>
+              <td>2022</td>
+              <td>Рифовый клан Меткайина</td>
+              <td>Вышел</td>
+            </tr>
+            <tr>
+              <th scope="row">Avatar: Fire and Ash</th>
+              <td>2025</td>
+              <td>Новые регионы Пандоры</td>
+              <td>Вышел</td>
+            </tr>
+            <tr>
+              <th scope="row">Avatar 4</th>
+              <td>2029</td>
+              <td>Продолжение саги</td>
+              <td>Анонсирован</td>
+            </tr>
+            <tr>
+              <th scope="row">Avatar 5</th>
+              <td>2031</td>
+              <td>Продолжение саги</td>
+              <td>Анонсирован</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <section class="form-section">
+        <p class="eyebrow">Обратная связь</p>
+        <h2>Создай свой план просмотра</h2>
+        <form action="#" method="post">
+          <fieldset>
+            <legend>Предпочтения зрителя</legend>
+            <div class="form-grid">
+              <p>
+                <label for="full-name">Полное имя</label
+                ><input
+                  id="full-name"
+                  name="full-name"
+                  type="text"
+                  placeholder="Аружан С."
+                  required
+                />
+              </p>
+              <p>
+                <label for="email">Email</label
+                ><input
+                  id="email"
+                  name="email"
+                  type="email"
+                  placeholder="you@example.com"
+                  required
+                />
+              </p>
+              <p>
+                <label for="watch-date">Дата просмотра</label
+                ><input id="watch-date" name="watch-date" type="date" />
+              </p>
+              <p>
+                <label for="group-size">Количество зрителей</label
+                ><input
+                  id="group-size"
+                  name="group-size"
+                  type="number"
+                  min="1"
+                  max="12"
+                  value="2"
+                />
+              </p>
+              <p>
+                <label for="phone">Номер телефона</label
+                ><input
+                  id="phone"
+                  name="phone"
+                  type="tel"
+                  placeholder="+7 700 000 0000"
+                  pattern="[+0-9 ()-]{7,}"
+                />
+              </p>
+            </div>
+            <fieldset class="choice-group">
+              <legend>Любимая среда Пандоры</legend>
+              <label
+                ><input
+                  type="radio"
+                  name="environment"
+                  value="forest"
+                  checked
+                />
+                Лес</label
+              ><label
+                ><input type="radio" name="environment" value="ocean" />
+                Океан</label
+              ><label
+                ><input type="radio" name="environment" value="mountains" />
+                Горы</label
+              >
+            </fieldset>
+            <p>
+              <label for="notes">Что хотите обсудить?</label
+              ><textarea
+                id="notes"
+                name="notes"
+                rows="5"
+                maxlength="300"
+                placeholder="Например: персонажей, эффекты или экосистему Пандоры."
+              ></textarea>
+            </p>
+            <p class="checkbox-line">
+              <label
+                ><input
+                  id="updates"
+                  name="updates"
+                  type="checkbox"
+                  value="yes"
+                />
+                Получать редкие напоминания о фильмах.</label
+              >
+            </p>
+            <button type="submit">Сохранить план</button>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <a class="brand" href="index.html">AVATAR</a>
+      <p>Природа <span>•</span> Люди <span>•</span> Пандора</p>
+      <p>Assignment 1</p>
+    </footer>
+  </body>
+</html>
